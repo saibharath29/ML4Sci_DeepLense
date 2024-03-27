@@ -29,7 +29,7 @@ Strategy:
  #### traning auc:1.0000
  #### validation auc:1.0000
 <img src="Specific Test 2. Lens Finding/results/Screenshot 2024-03-28 010121.png">
-<img src="Specific Test 2. Lens Finding/results/Screenshot 2024-03-27 120143.png">
+<img src="Specific Test 2. Lens Finding/results/Screenshot 2024-03-28 010143.png">
 
 ### Specific Test VI. SSL on Real Dataset
 
