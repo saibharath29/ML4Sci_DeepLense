@@ -35,7 +35,7 @@ Strategy:
 
 Task: Build a Self-Supervised Learning model for classifying the images into lenses using PyTorch or Keras. Pick the most appropriate approach and discuss your strategy
 
-Strategy:
+Strategy: 
 
 - After implementing an Equivariant Transformer architecture featuring custom RotationalConv2D layers designed for maintaining equivariance with respect to input rotations, we augment the model with a convolution operation applied to rotated inputs, followed by combining resulting feature maps through element-wise addition. Additionally, we leverage pre-trained ResNet50 weights for expedited learning of representations.
 
