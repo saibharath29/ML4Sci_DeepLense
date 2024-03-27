@@ -11,4 +11,4 @@ strategy.
  #### traning auc:
  #### validation auc:
 <img src="Common Test 1. Multi-Class Classification/results/Screenshot 2024-03-27 200636.png">
-<img src="https://github.com/saibharath29/ML4Sci_DeepLense/blob/main/Common%20Test%201.%20Multi-Class%20Classification/results/Screenshot%202024-03-27%20111132.png">
+<img src="Common Test 1. Multi-Class Classification/results/Screenshot 2024-03-27 200648.png">
