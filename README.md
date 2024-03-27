@@ -9,8 +9,8 @@ Strategy:
 
 - Lastly, a dense layer with 3 outputs is introduced, coupled with the application of softmax activation, to facilitate the generation of probabilities corresponding to the 3 classes.
  #### results:
- #### traning auc:
- #### validation auc:
+ #### traning auc:0.9757
+ #### validation auc:0.9768
 <img src="Common Test 1. Multi-Class Classification/results/Screenshot 2024-03-27 200636.png">
 <img src="Common Test 1. Multi-Class Classification/results/Screenshot 2024-03-27 200648.png">
 
@@ -26,8 +26,8 @@ Strategy:
 
 -Finally, the output of the attention layer undergoes two Dense layers. The final layer employs a sigmoid activation function to produce a probability output.
  #### results:
- #### traning auc:
- #### validation auc:
+ #### traning auc:1.0000
+ #### validation auc:1.0000
 <img src="Specific Test 2. Lens Finding/results/Screenshot 2024-03-27 200746.png">
 <img src="Specific Test 2. Lens Finding/results/Screenshot 2024-03-27 120143.png">
 
