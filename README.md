@@ -29,3 +29,15 @@ Strategy:
  #### validation auc:
 <img src="Specific Test 2. Lens Finding/results/Screenshot 2024-03-27 200746.png">
 <img src="Specific Test 2. Lens Finding/results/Screenshot 2024-03-27 120143.png">
+
+### Specific Test VI. SSL on Real Dataset
+
+Task: Build a Self-Supervised Learning model for classifying the images into lenses using PyTorch or Keras. Pick the most appropriate approach and discuss your strategy
+
+Strategy:
+
+After implementing an Equivariant Transformer architecture featuring custom RotationalConv2D layers designed for maintaining equivariance with respect to input rotations, we augment the model with a convolution operation applied to rotated inputs, followed by combining resulting feature maps through element-wise addition. Additionally, we leverage pre-trained ResNet50 weights for expedited learning of representations.
+
+For the loss function, we opt for contrastive loss, which incentivizes the model to generate embeddings that are closer for similar images and farther apart for dissimilar ones. Specifically, we compute the sum of squared distances between positive pairs (where y_true = 1) and the squared hinge loss between negative pairs (where y_true = 0) with a designated margin.
+
+Subsequently, post-training the embedding model, we fine-tune it for our classification task.
