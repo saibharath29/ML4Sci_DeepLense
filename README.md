@@ -41,3 +41,5 @@ After implementing an Equivariant Transformer architecture featuring custom Rota
 For the loss function, we opt for contrastive loss, which incentivizes the model to generate embeddings that are closer for similar images and farther apart for dissimilar ones. Specifically, we compute the sum of squared distances between positive pairs (where y_true = 1) and the squared hinge loss between negative pairs (where y_true = 0) with a designated margin.
 
 Subsequently, post-training the embedding model, we fine-tune it for our classification task.
+<img src="Specific Test 4. SSL on Real Dataset/results/Screenshot 2024-03-27 120321.png">
+
