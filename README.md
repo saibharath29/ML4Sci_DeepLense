@@ -28,4 +28,4 @@ Strategy:
  #### traning auc:
  #### validation auc:
 <img src="Specific Test 2. Lens Finding/results/Screenshot 2024-03-27 200746.png">
-<img src="Specific Test 2. Lens Finding/results/Screenshot 2024-03-27 200746.png">
+<img src="Specific Test 2. Lens Finding/results/Screenshot 2024-03-27 120143.png">
