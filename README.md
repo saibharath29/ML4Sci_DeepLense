@@ -51,6 +51,14 @@ Strategy:
 
 - we can use sub-pixel convolution for image upscaling, which enables the network to generate high-resolution images with finer details. This technique involves reshaping the features extracted from the previous layer into a tensor with a higher spatial resolution and then applying convolutional layers to produce the final high-resolution image.
 
+ #### results:
+
+ | Model      | MSE        | SSIM       | PSNR       |
+|------------|------------|------------|------------|
+| SuperResCNN (Super-Resolution Convolutional Neural Network) | 5.9711   | 0.999998    | 41.9 |
+| EDSR (Enhanced Deep Residual Networks)       | 0.00094   |0.999   | 31.995  |
+| ESRGAN (Enhanced Super-Resolution Generative Adversarial Networks)     | 0.00053   | 0.99994   | 30.7932  |
+
 
 
 ### Specific Test VI. SSL on Real Dataset
