@@ -41,8 +41,12 @@ Strategy:
 
 - The most optimal way to start is by implementing the SuperResCNN model that implements an upsampling layer followed by a three-layered neural network to learn the mapping between low-resolution and high-resolution images, such that the first layer can capture the low-level features, the second layer can capture high level features and the final layer can reconstruct the high resolution image
 
+<img src="Specific Test 3. Image Super-resolution/results/Screenshot 2024-04-01 153727.png">
+
 ## EDSR (Enhanced Deep Residual Networks)
 - Since the above SuperResCNN model has performed well, there could be a chance of improvement by training an EDSR model first (which has residual blocks that can help capture more complex image features) and then only if it works well, we can perform additional steps like cascading to take the output of the SuperResCNN and feed it to the EDSR.
+
+<img src="Specific Test 3. Image Super-resolution/results/Screenshot 2024-04-01 153738.png">
 
 ## ESRGAN (Enhanced Super-Resolution Generative Adversarial Networks)
 - Generative Adversarial Networks can result in extremely good results if problems such as mode collapse can be handled using appropriate loss functions.
@@ -51,13 +55,18 @@ Strategy:
 
 - we can use sub-pixel convolution for image upscaling, which enables the network to generate high-resolution images with finer details. This technique involves reshaping the features extracted from the previous layer into a tensor with a higher spatial resolution and then applying convolutional layers to produce the final high-resolution image.
 
+<img src="Specific Test 3. Image Super-resolution/results/Screenshot 2024-04-01 153800.png">
+
  #### results:
 
  | Model      | MSE        | SSIM       | PSNR       |
 |------------|------------|------------|------------|
-| SuperResCNN (Super-Resolution Convolutional Neural Network) | 5.9711   | 0.999998    | 41.9 |
+| SuperResCNN (Super-Resolution Convolutional Neural Network) | 5.9711   | 0.999998    | 41.97 |
 | EDSR (Enhanced Deep Residual Networks)       | 0.00094   |0.999   | 31.995  |
 | ESRGAN (Enhanced Super-Resolution Generative Adversarial Networks)     | 0.00053   | 0.99994   | 30.7932  |
+
+
+
 
 
 
