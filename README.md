@@ -16,6 +16,7 @@ Strategy:
 
 ### Specific Test II. Lens Finding
 Task: Build a model classifying the images from \easy directory into lenses using PyTorch or Keras. Evaluate your algorithm on the images from \hard directory; note that only 20% of them have labels available, you can use the rest to train the domain adaptation model or other model of your choice. Pick the most appropriate approach and discuss your strategy.
+
 Strategy:
 
 - We need to combine the images from the three different channels into one image for image classification.
