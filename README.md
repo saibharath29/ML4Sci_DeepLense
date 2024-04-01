@@ -33,6 +33,7 @@ Strategy:
 <img src="Specific Test 2. Lens Finding/results/Screenshot 2024-03-28 010143.png">
 
 ### Specific Test III. Image Super-resolution
+#### Task III.A:
 Task III.A: Train a deep learning-based super resolution algorithm of your choice to upscale low-resolution strong lensing images using the provided high-resolution samples as ground truths. Please implement your approach in PyTorch or Keras and discuss your strategy.
 
 Strategy:
@@ -42,12 +43,12 @@ Strategy:
 
 - The most optimal way to start is by implementing the SuperResCNN model that implements an upsampling layer followed by a three-layered neural network to learn the mapping between low-resolution and high-resolution images, such that the first layer can capture the low-level features, the second layer can capture high level features and the final layer can reconstruct the high resolution image
 
-<img src="Specific Test 3. Image Super-resolution/results/Screenshot 2024-04-01 153727.png">
+<img src="Specific Test 3. Image Super-resolution/Task III.A/results/Screenshot 2024-04-01 153727.png">
 
 ### EDSR (Enhanced Deep Residual Networks)
 - Since the above SuperResCNN model has performed well, there could be a chance of improvement by training an EDSR model first (which has residual blocks that can help capture more complex image features) and then only if it works well, we can perform additional steps like cascading to take the output of the SuperResCNN and feed it to the EDSR.
 
-<img src="Specific Test 3. Image Super-resolution/results/Screenshot 2024-04-01 153738.png">
+<img src="Specific Test 3. Image Super-resolution/Task III.A/results/Screenshot 2024-04-01 153738.png">
 
 ### ESRGAN (Enhanced Super-Resolution Generative Adversarial Networks)
 - Generative Adversarial Networks can result in extremely good results if problems such as mode collapse can be handled using appropriate loss functions.
@@ -56,7 +57,7 @@ Strategy:
 
 - we can use sub-pixel convolution for image upscaling, which enables the network to generate high-resolution images with finer details. This technique involves reshaping the features extracted from the previous layer into a tensor with a higher spatial resolution and then applying convolutional layers to produce the final high-resolution image.
 
-<img src="Specific Test 3. Image Super-resolution/results/Screenshot 2024-04-01 153800.png">
+<img src="Specific Test 3. Image Super-resolution/Task III.A/results/Screenshot 2024-04-01 153800.png">
 
  #### results:
 
@@ -66,9 +67,27 @@ Strategy:
 | EDSR (Enhanced Deep Residual Networks)       | 0.00094   |0.999   | 31.995  |
 | ESRGAN (Enhanced Super-Resolution Generative Adversarial Networks)     | 0.00053   | 0.99994   | 30.7932  |
 
+#### Task III.B:
 
+Strategy:
 
+#### SuperResCNN (Super-Resolution Convolutional Neural Network)
+- In Task 3a, compared to all the resolution models above, SuperResCNN performed better. Therefore, we will use the same model for the task.
 
+<img src="Specific Test 3. Image Super-resolution/Task III.B/results/Screenshot 2024-04-01 203209.png">
+
+#### FSRCNN(Fast Super-Resolution Convolutional Neural Network)
+- The SuperResCNN model is not effective for the given task. Instead, we will use the FERCNN mode
+- FSRCNN has a relatively shallow network, which allows us to understand the effect of each component more easily. It is even faster and produces better reconstructed image quality compared to the previous SRCNN model.
+
+  <img src="Specific Test 3. Image Super-resolution/Task III.B/results/Screenshot 2024-04-01 203221.png">
+
+  #### results:
+
+ | Model      | MSE        | SSIM       | PSNR       |
+|------------|------------|------------|------------|
+| SuperResCNN (Super-Resolution Convolutional Neural Network) | 0.001934   | 0.999   | 18.907 |
+| FSRCNN(Fast Super-Resolution Convolutional Neural Network)      |  0.0017   | 0.999   | 23.6147 |
 
 
 ### Specific Test VI. SSL on Real Dataset
