@@ -74,13 +74,14 @@ Strategy:
 #### SuperResCNN (Super-Resolution Convolutional Neural Network)
 - In Task 3a, compared to all the resolution models above, SuperResCNN performed better. Therefore, we will use the same model for the task.
 
-<img src="Specific Test 3. Image Super-resolution/Task III.B/results/Screenshot 2024-04-01 203209.png">
+<img src="Specific Test 3. Image Super-resolution/Task III.B/results/Screenshot 2024-04-01 203221.png">
+
 
 #### FSRCNN(Fast Super-Resolution Convolutional Neural Network)
 - The SuperResCNN model is not effective for the given task. Instead, we will use the FERCNN mode
 - FSRCNN has a relatively shallow network, which allows us to understand the effect of each component more easily. It is even faster and produces better reconstructed image quality compared to the previous SRCNN model.
 
-  <img src="Specific Test 3. Image Super-resolution/Task III.B/results/Screenshot 2024-04-01 203221.png">
+  <img src="Specific Test 3. Image Super-resolution/Task III.B/results/Screenshot 2024-04-01 203209.png">
 
   #### results:
 
